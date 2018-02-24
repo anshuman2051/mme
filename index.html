@@ -16,17 +16,19 @@
     <title>Meet My Expert</title>
 </head>
 <body>
-<div class="container-fluid p-0">
-    <div class="topHeader container-fluid bg-dark m-0 p-0">         <!--top most header-->
-        <nav class="navbar navbar-expand-md text-light navbar-dark" >
+
+<div class="container-fluid px-0 ">     <!-- container of all elements-->
+     <!--top most header-->
+    <div class="topHeader container-fluid bg-dark m-0 ">
+        <nav class="navbar navbar-expand-md text-light navbar-dark mb-0" >
             <a class="navbar-brand" href="#">MEET MY EXPERT</a>                <!--main logo-->
             <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#collapseButton"> <!--collapse button for small screen-->
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--navbar list starts here-->
-            <div class="collapse navbar-collapse" id="collapseButton">
+            <div class="collapse navbar-collapse " id="collapseButton">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">About Us</a>
                         <div class="dropdown-menu">
                             <!--sublist 1-->
@@ -49,13 +51,152 @@
             </div>
         </nav>
     </div>
+
+    <!--space between headers -->
     <div class="space" style="height:0.3rem; "></div>
+
+    <!-- bottom and last header-->
     <div class="bottomHeader container-fluid ">
-        <div class="row bg-dark text-light">
-            <div class="col-md-3 mx-auto"><i class="glyphicon glyphicon-home"></i>HOME</div>
-            <div class="col-md-3 mx-auto"><i class="glyphicon glyphicon-user"></i>FIND AN EXPERT </div>
-            <div class="col-md-3 mx-auto"><i class="glyphicon glyphicon-education"></i>BECOME AN EXPERT</div>
-            <div class="col-md-3 mx-auto">ALPHA</div>
+        <div class="row bg-dark text-light py-3">
+            <div class="col-md-3 mx-auto">
+                <a href="#" class="text-light"><i class="glyphicon glyphicon-home"></i>HOME</a>
+            </div>
+            <div class="col-md-3 mx-auto">
+                <a href="#" class="text-light"><i class="glyphicon glyphicon-user"></i>FIND AN EXPERT </a>
+            </div>
+            <div class="col-md-3 mx-auto">
+                <a href="#" class="text-light"><i class="glyphicon glyphicon-education"></i>BECOME AN EXPERT
+                </a>
+            </div>
+            <div class="col-md-3 mx-auto">
+                <span><i class="glyphicon glyphicon-search"></i><input type="search" class="text-dark" placeholder="SEARCH"></span>
+            </div>
+        </div>
+    </div>
+
+    <!--first div with motto-->
+    <div class="jumbotron mb-0">
+        <h3 class="mx-auto" style="max-width:600px"><strong>BOOK FREE/PAID CONSULTATION WITH EXPERTS</strong></h3>
+        <h4  class="mx-auto" style="max-width:400px">privacy and expert verification guarenteed</h4>
+        <span >
+        <input type="search" class="text-dark" placeholder="Search name,place etc." >
+        <button type="submit" class="btn btn-success ">FIND EXPERT</button>
+        </span>
+    </div>
+
+
+    <!-- second div showing features-->
+    <div class="jumbotron-fluid bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="http://cdn.apk-cloud.com/detail/screenshot/6Z59NeaX0tZQWxquYlUV_IsVwcErtegFcSCtzPjDLRKOYHuoQ37zD0l_1hfNISFJDcBA=h900.png" alt="chat-img"
+                    class="img-fluid" height="400px" width="200px">
+                </div>
+                <div class="col-md-7 text-light">
+                    <h3>Forget the waiting room<br>
+                    Consult Online.</h3>
+                    <ul style="list-style-type: none">
+                      <li> <i class="glyphicon glyphicon-ok"></i> Free/paid consulting with experts</li>
+                      <li> <i class="glyphicon glyphicon-ok"></i> 100% private and confidential</li>
+                      <li> <i class="glyphicon glyphicon-ok"></i> Qualification of experts verified</li>
+                      <li> <i class="glyphicon glyphicon-ok"></i> Suggestion by expert in pdf format</li>
+                      <li> <i class="glyphicon glyphicon-ok"></i> Added voice+video chat in App</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 mx-auto">
+                    <button type="submit" class="btn btn-success pagination-centered">CONSULT NOW</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- third div regarding articles from experts-->
+    <div class="jumbotron ">
+        <h2 class="text-center"><strong>Read top article from experts and stay updated</strong></h2>
+        <!--using carousel-->
+        <div id="card" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#card" data-slide-to="0" class="active"></li>
+                <li data-target="#card" data-slide-to="1"></li>
+                <li data-target="#card" data-slide-to="2"></li>
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="display: inline">
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="#"alt="abc">
+                        <div class="card-body">
+                            <h4 class="card-title">alpha</h4>
+                            <p class="card-text">beta gamma</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="#"alt="abc">
+                        <div class="card-body">
+                            <h4 class="card-title">alpha</h4>
+                            <p class="card-text">beta gamma</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="#"alt="abc">
+                        <div class="card-body">
+                            <h4 class="card-title">alpha</h4>
+                            <p class="card-text">beta gamma</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="#"alt="abc">
+                        <div class="card-body">
+                            <h4 class="card-title">alpha</h4>
+                            <p class="card-text">beta gamma</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="#"alt="abc">
+                        <div class="card-body">
+                            <h4 class="card-title">alpha</h4>
+                            <p class="card-text">beta gamma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <!--fourthdiv on consultation records-->
+    <div class="jumbotron-fluid bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="http://www.clipartbest.com/cliparts/Kij/jqp/Kijjqpyiq.jpeg" alt="report-img"
+                    class="img-fluid" height="400px" width="200px">
+                </div>
+                <div class="col-md-7 text-light">
+                    <h3>All your report and consulting <br>
+                    history secured in one place</h3>
+                    <ul style="list-style-type: none">
+                      <li> <i class="glyphicon glyphicon-ok"></i> Records are accessible by you only</li>
+                      <li> <i class="glyphicon glyphicon-ok"></i> 256 bit end to end encryption</li>
+                      <li> <i class="glyphicon glyphicon-ok"></i> Access your records anytime anywhere</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 mx-auto">
+                    <button type="submit" class="btn btn-success pagination-centered">more</button>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
