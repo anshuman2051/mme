@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="indexStyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -78,10 +79,12 @@
     <div class="jumbotron mb-0">
         <h3 class="mx-auto" style="max-width:600px"><strong>BOOK FREE/PAID CONSULTATION WITH EXPERTS</strong></h3>
         <h4  class="mx-auto" style="max-width:400px">privacy and expert verification guarenteed</h4>
-        <span >
-        <input type="search" class="text-dark" placeholder="Search name,place etc." >
-        <button type="submit" class="btn btn-success ">FIND EXPERT</button>
-        </span>
+        <div class="row" >
+            <div class="col-md-12 col-md-offset-4 col col-sm-offset-2">
+                <input type="search" class="text-dark" placeholder="Search name,place etc." >
+                <button type="submit" class="btn btn-success ">FIND EXPERT</button>
+            </div>
+        </div>
     </div>
 
 
@@ -89,7 +92,7 @@
     <div class="jumbotron-fluid bg-secondary">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 pb-3">
                     <img src="http://cdn.apk-cloud.com/detail/screenshot/6Z59NeaX0tZQWxquYlUV_IsVwcErtegFcSCtzPjDLRKOYHuoQ37zD0l_1hfNISFJDcBA=h900.png" alt="chat-img"
                     class="img-fluid" height="400px" width="200px">
                 </div>
@@ -103,62 +106,47 @@
                       <li> <i class="glyphicon glyphicon-ok"></i> Suggestion by expert in pdf format</li>
                       <li> <i class="glyphicon glyphicon-ok"></i> Added voice+video chat in App</li>
                     </ul>
-                </div>
-                <div class="col-md-12 mx-auto">
                     <button type="submit" class="btn btn-success pagination-centered">CONSULT NOW</button>
                 </div>
+
             </div>
 
         </div>
     </div>
 
     <!-- third div regarding articles from experts-->
-    <div class="jumbotron ">
-        <h2 class="text-center"><strong>Read top article from experts and stay updated</strong></h2>
+    <div class="jumbotron bg-dark mb-0">
+        <h2 class="text-center text-light"><strong>Read top article from experts and stay updated</strong></h2>
         <!--using carousel-->
-        <div id="card" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
+        <div id="card" class="carousel slide" data-ride="carousel" data-interval="1000">
+            <ol class="carousel-indicators">
                 <li data-target="#card" data-slide-to="0" class="active"></li>
                 <li data-target="#card" data-slide-to="1"></li>
                 <li data-target="#card" data-slide-to="2"></li>
-            </ul>
+            </ol>
 
             <div class="carousel-inner">
-                <div class="carousel-item active" style="display: inline">
+                <div class="item active" >
                     <div class="card" style="width:400px">
-                        <img class="card-img-top" src="#"alt="abc">
-                        <div class="card-body">
-                            <h4 class="card-title">alpha</h4>
-                            <p class="card-text">beta gamma</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width:400px">
-                        <img class="card-img-top" src="#"alt="abc">
-                        <div class="card-body">
-                            <h4 class="card-title">alpha</h4>
-                            <p class="card-text">beta gamma</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width:400px">
-                        <img class="card-img-top" src="#"alt="abc">
+                        <img class="card-img-top" src="http://www.medicalimagingtalk.com/wp-content/uploads/2013/06/shutterstock_15300025.jpg"alt="abc">
                         <div class="card-body">
                             <h4 class="card-title">alpha</h4>
                             <p class="card-text">beta gamma</p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="item">
                     <div class="card" style="width:400px">
-                        <img class="card-img-top" src="#"alt="abc">
+                        <img class="card-img-top" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fibrandstudio.com%2Fwp-content%2Fuploads%2F2012%2F06%2Fhow-to-brand-medical-business.jpg&f=1"alt="abc">
                         <div class="card-body">
                             <h4 class="card-title">alpha</h4>
                             <p class="card-text">beta gamma</p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="item">
                     <div class="card" style="width:400px">
-                        <img class="card-img-top" src="#"alt="abc">
+                        <img class="card-img-top" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Ffortworth.uta.edu%2Fwp-content%2Fuploads%2F2017%2F06%2Fhealth.png&f=1"alt="abc">
                         <div class="card-body">
                             <h4 class="card-title">alpha</h4>
                             <p class="card-text">beta gamma</p>
@@ -179,7 +167,7 @@
     <div class="jumbotron-fluid bg-secondary">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 py-4">
                     <img src="http://www.clipartbest.com/cliparts/Kij/jqp/Kijjqpyiq.jpeg" alt="report-img"
                     class="img-fluid" height="400px" width="200px">
                 </div>
@@ -191,12 +179,48 @@
                       <li> <i class="glyphicon glyphicon-ok"></i> 256 bit end to end encryption</li>
                       <li> <i class="glyphicon glyphicon-ok"></i> Access your records anytime anywhere</li>
                     </ul>
-                </div>
-                <div class="col-md-12 mx-auto">
                     <button type="submit" class="btn btn-success pagination-centered">more</button>
                 </div>
+
             </div>
 
+        </div>
+    </div>
+
+    <!-- footer-->
+    <div class="container-fluid bg-dark" id="footer">
+        <div class="row">
+            <div class="col-sm-3">
+                <ul style="list-style-type: none">
+                    <li><a href="#">Help Centre</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 " >
+                <h2 style="width:40rem" class="mx-auto text-light"><strong>Meet MY Expert</strong></h2><br>
+                <p class="text-muted mx-auto" style="width:40rem">Copyright&#169;2018. All Rights Reserved</p>
+            </div>
+            <div class="col-sm-3">
+                <p class="text-muted">Connect us</p>
+                <table>
+                    <tr>
+                        <td><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/1024px-Youtube_icon.svg.png"
+                                             alt="youtube_icon" height="40px" width="40px"></a></td>
+                        <td><a href="#"><img src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.iconfinder.com%2Fdata%2Ficons%2Fyooicons_set01_socialbookmarks%2F512%2Fsocial_facebook_box_white.png&f=1"
+                                             height="40px" width="40px" alt="fb-image"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Ficons.iconarchive.com%2Ficons%2Fdtafalonso%2Fandroid-lollipop%2F512%2FGmail-icon.png&f=1"
+                                            height="40px" width="40px" alt="gmail-image"></a></td>
+                        <td><a href="#"><img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Ficons.iconarchive.com%2Ficons%2Fyootheme%2Fsocial-bookmark%2F512%2Fsocial-linkedin-box-blue-icon.png&f=1"
+                                            height="40px" width="40px" alt="linkedin-image"></a></td>
+                    </tr>
+                </table>
+
+            </div>
         </div>
     </div>
 </div>
