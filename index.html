@@ -131,19 +131,22 @@
 
 
         <!--using carousel-->
-        <div id="card" class="carousel slide" data-ride="carousel" data-interval="1000">
+        <div id="card" class="carousel slide" data-ride="carousel" data-interval="0" >
 
             <!--dots below the image for navigation-->
-            <ol class="carousel-indicators">
-                <li data-target="#card" data-slide-to="0" class="active"></li>
-                <li data-target="#card" data-slide-to="1"></li>
-                <li data-target="#card" data-slide-to="2"></li>
-            </ol>
+            <ul class="carousel-indicators ">
+                <li data-target="#card" data-slide-to="0" class="active bg-secondary"></li>
+                <li data-target="#card" data-slide-to="1" class="bg-secondary"></li>
+                <li data-target="#card" data-slide-to="2" class="bg-secondary"></li>
+            </ul>
+
 
             <!--data to be displayed in card form-->
             <div class="carousel-inner">
-                <div class="item active" >
-                    <div class="card" style="width:250px">
+                <div class="carousel-item active" >
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <div class="card" style="width:300px">
                         <img class="card-img-top"src="http://www.medicalimagingtalk.com/wp-content/uploads/2013/06/shutterstock_15300025.jpg"
                              height=250px  alt="abc">
                         <div class="card-body">
@@ -151,19 +154,54 @@
                             <p class="card-text">beta gamma</p>
                         </div>
                     </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="card" style="width:300px">
+                        <img class="card-img-top" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fibrandstudio.com%2Fwp-content%2Fuploads%2F2012%2F06%2Fhow-to-brand-medical-business.jpg&f=1"
+                             height=250px; alt="abc">
+                        <div class="card-body">
+                            <h4 class="card-title">alpha</h4>
+                            <p class="card-text">beta gamma</p>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="card" style="width:300px">
+                        <img class="card-img-top" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Ffortworth.uta.edu%2Fwp-content%2Fuploads%2F2017%2F06%2Fhealth.png&f=1"
+                             height=250px; alt="abc">
+                        <div class="card-body">
+                            <h4 class="card-title">alpha</h4>
+                            <p class="card-text">beta gamma</p>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="card" style="width:300px">
+                        <img class="card-img-top"src="http://www.medicalimagingtalk.com/wp-content/uploads/2013/06/shutterstock_15300025.jpg"
+                             height=250px  alt="abc">
+                        <div class="card-body">
+                            <h4 class="card-title">alpha</h4>
+                            <p class="card-text">beta gamma</p>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="item">
-                    <div class="card" style="width:400px">
-                        <img class="card-img-top" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fibrandstudio.com%2Fwp-content%2Fuploads%2F2012%2F06%2Fhow-to-brand-medical-business.jpg&f=1"alt="abc">
+                <div class="carousel-item">
+                    <div class="card" style="width:250px">
+                        <img class="card-img-top" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fibrandstudio.com%2Fwp-content%2Fuploads%2F2012%2F06%2Fhow-to-brand-medical-business.jpg&f=1"
+                             height=250px; alt="abc">
                         <div class="card-body">
                             <h4 class="card-title">alpha</h4>
                             <p class="card-text">beta gamma</p>
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="card" style="width:400px">
-                        <img class="card-img-top" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Ffortworth.uta.edu%2Fwp-content%2Fuploads%2F2017%2F06%2Fhealth.png&f=1"alt="abc">
+                <div class="carousel-item">
+                    <div class="card" style="width:250px">
+                        <img class="card-img-top" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Ffortworth.uta.edu%2Fwp-content%2Fuploads%2F2017%2F06%2Fhealth.png&f=1"
+                             height=250px; alt="abc">
                         <div class="card-body">
                             <h4 class="card-title">alpha</h4>
                             <p class="card-text">beta gamma</p>
@@ -173,7 +211,7 @@
             </div>
 
             <!--previous and next buttons-->
-            <a class="carousel-control-prev" href="#card" data-slide="prev">
+            <a class="carousel-control-prev " href="#card" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>
             <a class="carousel-control-next" href="#card" data-slide="next">
