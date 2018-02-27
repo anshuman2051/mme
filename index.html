@@ -22,7 +22,7 @@
      <!--top most header-->
     <div class="topHeader container-fluid m-0 fixed-top">
 
-        <nav class="navbar navbar-expand-md text-light navbar-dark mb-0" >
+        <nav class="navbar navbar-expand-sm text-light navbar-dark mb-0" >
             <a class="navbar-brand" href="#" style="font-family:'DejaVu Serif Condensed' "><strong>MEET MY EXPERT</strong></a><!--main logo-->
 
             <!--collapse button for small screen-->
@@ -32,9 +32,9 @@
 
             <!--navbar list starts here-->
             <div class="collapse navbar-collapse " id="collapseButton">
-                <ul class="navbar-nav float-right">
-                    <li class="nav-item ">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">About Us</a>
+                <ul class="navbar-nav float-right" >
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown">About Us</a>
 
                         <!--sublist 1-->
                         <div class="dropdown-menu">
@@ -42,8 +42,8 @@
                             <a class="dropdown-item" href="#">Link 2</a>
                             <a class="dropdown-item" href="#">Link 3</a>
                         </div>
-                                </li>
-                    <li class="nav-item">
+                    </li>
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">For Experts</a>
 
                         <!--sublist 2-->
@@ -60,18 +60,19 @@
         </nav>
     </div>
 
+
     <!--space between headers
     <div class="space" style="height:0.3rem; "></div>-->
 
     <!--first div with motto-->
-    <div class="jumbotron mb-0 header_mid bg-primary text-light">
+    <div class="container-fluid mb-0 header_mid bg-primary text-light">
         <div style="margin-top: 275px">
         <h2 class="mx-auto" style="max-width:800px;"><strong>BOOK FREE/PAID CONSULTATION WITH EXPERTS</strong></h2>
         <h3  class="mx-auto text-white" style="max-width:500px">privacy and expert verification guarenteed</h3>
         <div class="row" >
             <div class="col-md-12 col-md-offset-4 col col-sm-offset-2">
-                <input type="search" class="text-dark" placeholder="Search name,place etc." >
-                <button type="submit" class="btn btn-success ">FIND EXPERT</button>
+                <input type="search" class="text-dark form-control" placeholder="Search name,place etc." style="width:25%;display: inline">
+                <button type="submit" class="btn btn-success " >FIND EXPERT</button>
             </div>
         </div>
         </div>
@@ -91,14 +92,15 @@
                 </a>
             </div>
             <div class="col-md-3 mx-auto">
-                <span><h4><i class="glyphicon glyphicon-search"></i><input type="search" class="text-dark" placeholder="SEARCH"></h4></span>
+                <span><h4><i class="glyphicon glyphicon-search"></i><input type="search" class="text-dark form-control ml-2" placeholder="SEARCH"
+                style="width:90%;display: inline"></h4></span>
             </div>
         </div>
     </div>
 
 
     <!-- second div showing features-->
-    <div class="jumbotron-fluid " style="background-color: #f1f1f1">
+    <div class="container-fluid " style="background-color: #f1f1f1">
         <div class="container">
             <div class="row" style="margin-top: 50px; margin-bottom:50px;" >
                 <div class="col-md-5 pb-3">
@@ -145,7 +147,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" >
                     <div class="row">
-                        <div class="col-xs-3">
+                        <div class="col-md-3">
                             <div class="card" style="width:300px">
                         <img class="card-img-top"src="http://www.medicalimagingtalk.com/wp-content/uploads/2013/06/shutterstock_15300025.jpg"
                              height=250px  alt="abc">
@@ -155,7 +157,7 @@
                         </div>
                     </div>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-md-3">
                             <div class="card" style="width:300px">
                         <img class="card-img-top" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fibrandstudio.com%2Fwp-content%2Fuploads%2F2012%2F06%2Fhow-to-brand-medical-business.jpg&f=1"
                              height=250px; alt="abc">
@@ -165,7 +167,7 @@
                         </div>
                     </div>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-md-3">
                             <div class="card" style="width:300px">
                         <img class="card-img-top" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Ffortworth.uta.edu%2Fwp-content%2Fuploads%2F2017%2F06%2Fhealth.png&f=1"
                              height=250px; alt="abc">
@@ -175,7 +177,7 @@
                         </div>
                     </div>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-md-3">
                             <div class="card" style="width:300px">
                         <img class="card-img-top"src="http://www.medicalimagingtalk.com/wp-content/uploads/2013/06/shutterstock_15300025.jpg"
                              height=250px  alt="abc">
@@ -221,7 +223,7 @@
     </div>
 
     <!--fourthdiv on consultation records-->
-    <div class="jumbotron-fluid bodyLower" style="background-color: #f1f1f1">
+    <div class="container-fluid bodyLower" style="background-color: #f1f1f1">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 py-4">
