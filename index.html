@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,21 +18,26 @@
 </head>
 <body>
 
-<div class="container-fluid px-0 ">     <!-- container of all elements-->
+<div class="container-fluid px-0 mmeContainer">     <!-- container of all elements-->
      <!--top most header-->
-    <div class="topHeader container-fluid bg-dark m-0 ">
+    <div class="topHeader container-fluid m-0 fixed-top">
+
         <nav class="navbar navbar-expand-md text-light navbar-dark mb-0" >
-            <a class="navbar-brand" href="#">MEET MY EXPERT</a>                <!--main logo-->
-            <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#collapseButton"> <!--collapse button for small screen-->
+            <a class="navbar-brand" href="#" style="font-family:'DejaVu Serif Condensed' "><strong>MEET MY EXPERT</strong></a><!--main logo-->
+
+            <!--collapse button for small screen-->
+            <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#collapseButton">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <!--navbar list starts here-->
             <div class="collapse navbar-collapse " id="collapseButton">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav float-right">
                     <li class="nav-item ">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">About Us</a>
+
+                        <!--sublist 1-->
                         <div class="dropdown-menu">
-                            <!--sublist 1-->
                             <a class="dropdown-item" href="#">Link 1</a>
                             <a class="dropdown-item" href="#">Link 2</a>
                             <a class="dropdown-item" href="#">Link 3</a>
@@ -40,73 +45,79 @@
                                 </li>
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">For Experts</a>
+
+                        <!--sublist 2-->
                         <div class="dropdown-menu">
-                            <!--sublist 2-->
                             <a class="dropdown-item" href="#">Link 1</a>
                             <a class="dropdown-item" href="#">Link 2</a>
                             <a class="dropdown-item" href="#">Link 3</a>
                         </div>
                     </li>
+
                     <button class="btn btn-primary">Login/Signup</button>           <!--login button-->
                 </ul>
             </div>
         </nav>
     </div>
 
-    <!--space between headers -->
-    <div class="space" style="height:0.3rem; "></div>
-
-    <!-- bottom and last header-->
-    <div class="bottomHeader container-fluid ">
-        <div class="row bg-dark text-light py-3">
-            <div class="col-md-3 mx-auto">
-                <a href="#" class="text-light"><i class="glyphicon glyphicon-home"></i>HOME</a>
-            </div>
-            <div class="col-md-3 mx-auto">
-                <a href="#" class="text-light"><i class="glyphicon glyphicon-user"></i>FIND AN EXPERT </a>
-            </div>
-            <div class="col-md-3 mx-auto">
-                <a href="#" class="text-light"><i class="glyphicon glyphicon-education"></i>BECOME AN EXPERT
-                </a>
-            </div>
-            <div class="col-md-3 mx-auto">
-                <span><i class="glyphicon glyphicon-search"></i><input type="search" class="text-dark" placeholder="SEARCH"></span>
-            </div>
-        </div>
-    </div>
+    <!--space between headers
+    <div class="space" style="height:0.3rem; "></div>-->
 
     <!--first div with motto-->
-    <div class="jumbotron mb-0">
-        <h3 class="mx-auto" style="max-width:600px"><strong>BOOK FREE/PAID CONSULTATION WITH EXPERTS</strong></h3>
-        <h4  class="mx-auto" style="max-width:400px">privacy and expert verification guarenteed</h4>
+    <div class="jumbotron mb-0 header_mid bg-primary text-light">
+        <div style="margin-top: 275px">
+        <h2 class="mx-auto" style="max-width:800px;"><strong>BOOK FREE/PAID CONSULTATION WITH EXPERTS</strong></h2>
+        <h3  class="mx-auto text-white" style="max-width:500px">privacy and expert verification guarenteed</h3>
         <div class="row" >
             <div class="col-md-12 col-md-offset-4 col col-sm-offset-2">
                 <input type="search" class="text-dark" placeholder="Search name,place etc." >
                 <button type="submit" class="btn btn-success ">FIND EXPERT</button>
             </div>
         </div>
+        </div>
+    </div>
+
+        <!-- bottom and last header-->
+    <div class="bottomHeader container-fluid ">
+        <div class="row  text-light py-1">
+            <div class="col-md-3 mx-auto">
+                <a href="#" class="text-light"><h4><i class="glyphicon glyphicon-home"></i>HOME</h4></a>
+            </div>
+            <div class="col-md-3 mx-auto">
+                <a href="#" class="text-light"><h4><i class="glyphicon glyphicon-user"></i>FIND AN EXPERT </h4></a>
+            </div>
+            <div class="col-md-3 mx-auto">
+                <a href="#" class="text-light"><h4><i class="glyphicon glyphicon-education"></i>BECOME AN EXPERT</h4>
+                </a>
+            </div>
+            <div class="col-md-3 mx-auto">
+                <span><h4><i class="glyphicon glyphicon-search"></i><input type="search" class="text-dark" placeholder="SEARCH"></h4></span>
+            </div>
+        </div>
     </div>
 
 
     <!-- second div showing features-->
-    <div class="jumbotron-fluid bg-secondary">
+    <div class="jumbotron-fluid " style="background-color: #f1f1f1">
         <div class="container">
-            <div class="row">
+            <div class="row" style="margin-top: 50px; margin-bottom:50px;" >
                 <div class="col-md-5 pb-3">
                     <img src="http://cdn.apk-cloud.com/detail/screenshot/6Z59NeaX0tZQWxquYlUV_IsVwcErtegFcSCtzPjDLRKOYHuoQ37zD0l_1hfNISFJDcBA=h900.png" alt="chat-img"
-                    class="img-fluid" height="400px" width="200px">
+                    class="img-responsive" height="400px" width="200px" >
                 </div>
-                <div class="col-md-7 text-light">
-                    <h3>Forget the waiting room<br>
-                    Consult Online.</h3>
-                    <ul style="list-style-type: none">
-                      <li> <i class="glyphicon glyphicon-ok"></i> Free/paid consulting with experts</li>
-                      <li> <i class="glyphicon glyphicon-ok"></i> 100% private and confidential</li>
-                      <li> <i class="glyphicon glyphicon-ok"></i> Qualification of experts verified</li>
-                      <li> <i class="glyphicon glyphicon-ok"></i> Suggestion by expert in pdf format</li>
-                      <li> <i class="glyphicon glyphicon-ok"></i> Added voice+video chat in App</li>
-                    </ul>
-                    <button type="submit" class="btn btn-success pagination-centered">CONSULT NOW</button>
+                <div class="col-md-7 text-dark">
+                    <h2><strong>Forget the waiting room<br>
+                        Consult Online.</strong></h2>
+                    <h4>
+                        <ul style="list-style-type: none">
+                          <li> <i class="glyphicon glyphicon-ok"></i> Free/paid consulting with experts</li>
+                          <li> <i class="glyphicon glyphicon-ok"></i> 100% private and confidential</li>
+                          <li> <i class="glyphicon glyphicon-ok"></i> Qualification of experts verified</li>
+                          <li> <i class="glyphicon glyphicon-ok"></i> Suggestion by expert in pdf format</li>
+                          <li> <i class="glyphicon glyphicon-ok"></i> Added voice+video chat in App</li>
+                        </ul>
+                    </h4>
+                    <button type="submit" class="btn btn-success ">CONSULT NOW</button>
                 </div>
 
             </div>
@@ -115,20 +126,26 @@
     </div>
 
     <!-- third div regarding articles from experts-->
-    <div class="jumbotron bg-dark mb-0">
+    <div class="jumbotron  mb-0 bg-primary pt-2 ">
         <h2 class="text-center text-light"><strong>Read top article from experts and stay updated</strong></h2>
+
+
         <!--using carousel-->
         <div id="card" class="carousel slide" data-ride="carousel" data-interval="1000">
+
+            <!--dots below the image for navigation-->
             <ol class="carousel-indicators">
                 <li data-target="#card" data-slide-to="0" class="active"></li>
                 <li data-target="#card" data-slide-to="1"></li>
                 <li data-target="#card" data-slide-to="2"></li>
             </ol>
 
+            <!--data to be displayed in card form-->
             <div class="carousel-inner">
                 <div class="item active" >
-                    <div class="card" style="width:400px">
-                        <img class="card-img-top" src="http://www.medicalimagingtalk.com/wp-content/uploads/2013/06/shutterstock_15300025.jpg"alt="abc">
+                    <div class="card" style="width:250px">
+                        <img class="card-img-top"src="http://www.medicalimagingtalk.com/wp-content/uploads/2013/06/shutterstock_15300025.jpg"
+                             height=250px  alt="abc">
                         <div class="card-body">
                             <h4 class="card-title">alpha</h4>
                             <p class="card-text">beta gamma</p>
@@ -154,32 +171,37 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+
+            <!--previous and next buttons-->
+            <a class="carousel-control-prev" href="#card" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
+            <a class="carousel-control-next" href="#card" data-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </a>
         </div>
     </div>
 
     <!--fourthdiv on consultation records-->
-    <div class="jumbotron-fluid bg-secondary">
+    <div class="jumbotron-fluid bodyLower" style="background-color: #f1f1f1">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 py-4">
-                    <img src="http://www.clipartbest.com/cliparts/Kij/jqp/Kijjqpyiq.jpeg" alt="report-img"
-                    class="img-fluid" height="400px" width="200px">
+                    <img src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn1.iconfinder.com%2Fdata%2Ficons%2Fbusiness-257%2F100%2Fbusiness-01-512.png&f=1" alt="report-img"
+                    class="img-responsive" height="400px" width="200px">
                 </div>
-                <div class="col-md-7 text-light">
-                    <h3>All your report and consulting <br>
-                    history secured in one place</h3>
-                    <ul style="list-style-type: none">
-                      <li> <i class="glyphicon glyphicon-ok"></i> Records are accessible by you only</li>
-                      <li> <i class="glyphicon glyphicon-ok"></i> 256 bit end to end encryption</li>
-                      <li> <i class="glyphicon glyphicon-ok"></i> Access your records anytime anywhere</li>
-                    </ul>
-                    <button type="submit" class="btn btn-success pagination-centered">more</button>
+                <div class="col-md-7 text-dark">
+                    <h2><strong>All your report and consulting <br>
+                        history secured in one place</strong></h2>
+                    <h4>
+                        <ul style="list-style-type: none">
+                          <li> <i class="glyphicon glyphicon-ok"></i> Records are accessible by you only</li>
+                          <li> <i class="glyphicon glyphicon-ok"></i> 256 bit end to end encryption</li>
+                          <li> <i class="glyphicon glyphicon-ok"></i> Access your records anytime anywhere</li>
+                        </ul>
+                    </h4>
+                    <button type="submit" class="btn btn-success ">more</button>
+
                 </div>
 
             </div>
@@ -188,11 +210,11 @@
     </div>
 
     <!-- footer-->
-    <div class="container-fluid bg-dark" id="footer">
+    <div class="footer container-fluid bg-secondary pt-4 " id="footer">
         <div class="row">
             <div class="col-sm-3">
-                <ul style="list-style-type: none">
-                    <li><a href="#">Help Centre</a></li>
+                <ul style="list-style-type: none" >
+                    <li><a href="#" class="text-light" >Help Centre</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
@@ -201,21 +223,21 @@
             </div>
             <div class="col-sm-6 " >
                 <h2 style="width:40rem" class="mx-auto text-light"><strong>Meet MY Expert</strong></h2><br>
-                <p class="text-muted mx-auto" style="width:40rem">Copyright&#169;2018. All Rights Reserved</p>
+                <p class=" mx-auto " style="width:40rem">Copyright&#169;2018. All Rights Reserved</p>
             </div>
             <div class="col-sm-3">
-                <p class="text-muted">Connect us</p>
+                <p ><strong>Connect us</strong></p>
                 <table>
                     <tr>
-                        <td><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/1024px-Youtube_icon.svg.png"
+                        <td class="py-2 px-2"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/1024px-Youtube_icon.svg.png"
                                              alt="youtube_icon" height="40px" width="40px"></a></td>
                         <td><a href="#"><img src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.iconfinder.com%2Fdata%2Ficons%2Fyooicons_set01_socialbookmarks%2F512%2Fsocial_facebook_box_white.png&f=1"
                                              height="40px" width="40px" alt="fb-image"></a></td>
                     </tr>
                     <tr>
-                        <td><a href="#"><img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Ficons.iconarchive.com%2Ficons%2Fdtafalonso%2Fandroid-lollipop%2F512%2FGmail-icon.png&f=1"
+                        <td class=" pb-4 px-2"><a href="#"><img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Ficons.iconarchive.com%2Ficons%2Fdtafalonso%2Fandroid-lollipop%2F512%2FGmail-icon.png&f=1"
                                             height="40px" width="40px" alt="gmail-image"></a></td>
-                        <td><a href="#"><img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Ficons.iconarchive.com%2Ficons%2Fyootheme%2Fsocial-bookmark%2F512%2Fsocial-linkedin-box-blue-icon.png&f=1"
+                        <td class="pb-4"><a href="#"><img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Ficons.iconarchive.com%2Ficons%2Fyootheme%2Fsocial-bookmark%2F512%2Fsocial-linkedin-box-blue-icon.png&f=1"
                                             height="40px" width="40px" alt="linkedin-image"></a></td>
                     </tr>
                 </table>
