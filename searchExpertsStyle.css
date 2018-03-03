@@ -1,0 +1,26 @@
+.topHeader,.bottomHeader,.footer{
+    background-color: #F44336;
+}
+.footer a,.footer p {
+    color:white;
+}
+.profilePic,.profilePic>img{
+    max-width: 100px;
+    max-height: available;
+}
+.workplacePics,.right{
+    list-style-type: none;
+}
+.center,.right{
+    height:250px;
+}
+.right li{
+    display: block;
+}
+li{
+    display: inline-block;
+}
+.thumbnail{
+    width: 40px;
+    display: inline;
+}
