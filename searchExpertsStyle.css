@@ -1,18 +1,18 @@
 .topHeader,.bottomHeader,.footer{
     background-color: #F44336;
 }
+.expertListViewRow{
+    background-color: #c4fdec;
+}
 .footer a,.footer p {
     color:white;
 }
 .profilePic,.profilePic>img{
     max-width: 100px;
-    max-height: available;
+    height:auto;
 }
 .workplacePics,.right{
     list-style-type: none;
-}
-.center,.right{
-    height:250px;
 }
 .right li{
     display: block;
@@ -24,3 +24,7 @@ li{
     width: 40px;
     display: inline;
 }
+#footer li{
+    display:block;
+}
+

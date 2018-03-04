@@ -6,14 +6,6 @@
     <link rel="stylesheet" href="../css/indexStyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <!--<link rel="stylesheet" href="/home/anshuman/PycharmProjects/untitled2/css/bootstrap.css">
-    <link rel="stylesheet" href="/home/anshuman/PycharmProjects/untitled2/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="/home/anshuman/PycharmProjects/untitled2/css/bootstrap-reboot.css">
-    -->
     <title>Meet My Expert</title>
 </head>
 <body>
@@ -70,7 +62,7 @@
         <h2 class="mx-auto" style="max-width:800px;"><strong>BOOK FREE/PAID CONSULTATION WITH EXPERTS</strong></h2>
         <h3  class="mx-auto text-white" style="max-width:500px">privacy and expert verification guarenteed</h3>
 
-            <div class="mx-auto" style="width:450px">
+            <div class="mx-auto" style="max-width:450px">
                 <input type="search" class="text-dark form-control" placeholder="Search name,place etc." style="width:60%;display: inline">
                 <button type="submit" class="btn btn-success " >FIND EXPERT</button>
             </div>
@@ -146,7 +138,7 @@
             <!--data to be displayed in card form-->
             <div class="carousel-inner">
                 <div class="carousel-item active" >
-                    <div class="row">
+                    <div class="row ">
                         <div class="col-md-3">
                             <div class="card" style="width:300px">
                         <img class="card-img-top"src="http://www.medicalimagingtalk.com/wp-content/uploads/2013/06/shutterstock_15300025.jpg"
@@ -249,11 +241,12 @@
         </div>
     </div>
 
-    <!-- footer-->
+     <!-- footer -->
     <div class="footer container-fluid bg-secondary pt-4 " id="footer">
         <div class="row">
-            <div class="col-sm-3">
-                <ul style="list-style-type: none" >
+
+            <div class="col-sm-3 col-xs-12">
+                <ul style="list-style-type: none; display:block;" >
                     <li><a href="#" class="text-light" >Help Centre</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Privacy Policy</a></li>
@@ -261,12 +254,15 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="col-sm-6 " >
-                <h2 style="width:40rem" class="mx-auto text-light"><strong>Meet MY Expert</strong></h2><br>
-                <p class=" mx-auto " style="width:40rem">Copyright&#169;2018. All Rights Reserved</p>
+
+            <div class="col-sm-6 col-xs-12 " style="text-align: center; line-height:0.5rem;" >
+                <h2  class=" text-light" ><strong>Meet MY Expert</strong></h2><br>
+                <p >Copyright&#169;2018. All Rights Reserved</p>
             </div>
-            <div class="col-sm-3">
-                <p ><strong>Connect us</strong></p>
+
+            <div class="col-sm-3 col-xs-12" >
+                <div class="mx-auto" style="max-width: 100px">
+                 <p ><strong>Connect us</strong></p>
                 <table>
                     <tr>
                         <td class="py-2 px-2"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/1024px-Youtube_icon.svg.png"
@@ -281,11 +277,24 @@
                                             height="40px" width="40px" alt="linkedin-image"></a></td>
                     </tr>
                 </table>
-
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<!--javascriptcdn goes here-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+<!-- native script link-->
+<script src="../js/indexScript.js"></script>
 
 <!--<script href="/home/anshuman/PycharmProjects/untitled2/js/bootstrap.bundle.js"></script>
 <script href="/home/anshuman/PycharmProjects/untitled2/js/bootstrap.js"></script>
