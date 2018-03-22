@@ -1,0 +1,16 @@
+.topHeader,.bottomHeader,.footer{
+    background-color: #F44336;
+}
+.footer a,.footer p {
+    color:white;
+}
+
+@keyframes example{
+    from{background-color: red;}
+    to{background-color: blue;}
+}
+
+.block7{
+    animation:example 4s infinite;
+}
+
