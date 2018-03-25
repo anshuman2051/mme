@@ -7,3 +7,7 @@ mmeContainer a:hover{
 .bodyMiddle2{
     background-color: #d1d1d1;
 }
+
+.bottomHeaderSm,.bottomHeaderSm>tr>td{
+    width:100%;
+}
